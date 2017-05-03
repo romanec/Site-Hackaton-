@@ -1,0 +1,1028 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+  /*COMMUN RULES*/
+
+  body{
+    font-family: 'Jaldi', sans-serif;
+    font-size: 17px;
+  }
+
+  .pc, .dropdown{
+    display: none;
+  }
+
+  figure, img{
+    width: 100%;
+    margin: 0;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /*END COMMUN RULES*/
+
+  /*menu*/
+
+  .mobile{
+    text-align: left;
+  }
+
+  .mobile:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drop img{
+    height: 40px;
+  }
+
+  .drop{
+    width: 40px;
+    padding: 15px;
+  }
+
+  .dropdown{
+    text-align: center;
+    background: white;
+    position: absolute;
+    width: 100%;
+  }
+
+  .dropdown a{
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #02a9a2;
+    border-bottom: #02a9a2 1px solid;
+    text-transform: uppercase;
+  }
+
+  .dropdown a:hover{
+    color: #007977;
+  }
+
+  .bk{
+      background: url("../img/photo-tel.png") fixed center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+  }
+
+  .none, .article1 p{
+    display: none;
+  }
+
+  .article1 article h2, .article1 p{
+    color: white;
+    font-size: 14px;
+  }
+
+  /*menu end*/
+
+  /*page accueil*/
+
+  .container h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-family: 'Rosario', sans-serif;
+  }
+
+  .container h1 span{
+    color: #02a9a2;
+  }
+
+  .article1{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: auto;
+  }
+
+  .article1 p{
+    text-align: justify;
+  }
+
+  .article1 article h2{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px #02a9a2 solid;
+    border-top: 2px #02a9a2 solid;
+    font-family: 'Molengo', sans-serif;
+  }
+
+  .button{
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .button a{
+    background: #02a9a2;
+    color: white;
+    padding: 8px 16px;
+  }
+
+  .button a:hover{
+    background: white;
+    color: #02a9a2;
+    border: #02a9a2 2px solid;
+  }
+
+  /*end page accueil*/
+
+  /*page bio*/
+
+  .bioaxel article,
+  .bioaxel2,
+  .bioaxel3{
+    width: 90%;
+    margin: auto;
+  }
+
+  .bioaxel article h1{
+    text-align: center;
+    color: #007977;
+  }
+
+  .bioaxel p, .bioaxel2 p, .bioaxel3 p{
+    text-align: justify;
+  }
+
+  .cit{
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .bioaxel3 h2{
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Jaldi', sans-serif;
+    text-align: center;
+  }
+
+  .bioaxel3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .center{
+    width: 50%;
+    text-align: center;
+  }
+
+  .bioaxel3 p img{
+    width: 30px;
+  }
+
+  /*end pag bio*/
+
+  /*Page Budget*/
+
+  .budgetpc{
+    display: none;
+  }
+
+  .budgetmobile figure{
+    width: 100%;
+    text-align: center;
+  }
+
+  .budgetmobile img{
+    width: 40%;
+  }
+
+  .containerbudget{
+    text-align: center;
+  }
+
+  .containerbudget p{
+    border-top: 1px #02a9a2 solid;
+    border-bottom: 1px #02a9a2 solid;
+    padding: 5px;
+    color: #918d8a;
+    font-weight: bold;
+  }
+
+  .containerbudget h1{
+    color: #007977;
+  }
+
+  /*End page budget*/
+
+  /*page concept*/
+
+  .containerconcept h1{
+    color: #007977;
+    text-align: center;
+  }
+
+  .concept1 h2, .concept2 h2,
+  .concept3 h2, .lastlast h2,
+  .last h3{
+    color: #918d8a;
+    text-align: center;
+    border-bottom: #007977 1px solid;
+    border-top: #007977 1px solid;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .concept1 p, .lastlast p{
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+  }
+
+  .concept2 img, .concept3 img,
+  .last h2 img{
+    width: 40px;
+  }
+
+  .last figure,
+  .lastlast figure{
+    display: none;
+  }
+
+  .concept3 ul{
+    padding: 0;
+  }
+
+  .concept1, .concept2, .concept3{
+    margin: 20px auto;
+  }
+
+  .last article{
+    width: 90%;
+    margin: auto;
+  }
+
+  .lastlast{
+    margin: 20px auto;
+  }
+
+  /*page concept end*/
+
+  /*Pages Contact P */
+
+   .contact {
+     width: 100%
+   }
+
+  .map-tab, .map-pc{
+    display: none;
+  }
+
+  .map{
+    width: 90%;
+    margin: auto;
+  }
+
+  .map-mobile{
+    width: 100%;
+  }
+
+  .contact h1, .map h2,
+  .cordenait h2{
+    text-align: center;
+    color: #918d8a;
+  }
+
+  .contact h1{
+    font-size: 30px;
+    width: 100%;
+    color: #007977;
+  }
+
+  .bg-contact{
+    height: 100%;
+  }
+
+  .cordenait a:hover {
+    color: #007977;
+  }
+
+  .cordenait p {
+    text-align: center;
+    border-bottom: gray;
+  }
+
+  /*FIN PAGES CONTACT */
+
+  footer{
+    background: #e0e0e0;
+  }
+
+  .social{
+    width: 100%;
+    text-align: center;
+  }
+
+  .social img{
+    width: 25px;
+    margin: 10px 5px;
+  }
+
+  footer p{
+    text-align: center;
+    margin: 0;
+  }
+
+  footer p:nth-child(1){
+    margin: 10px auto;
+  }
+
+  @media (min-width: 768px) {
+
+    /*COMMUN RULES*/
+
+    .mobile{
+      display: none;
+    }
+
+    .pc{
+      display: flex;
+    }
+
+    .bk{
+        background: url("../img/tab.png") fixed center no-repeat;
+        background-size: cover;
+    }
+
+    /*END COMMUN RULES*/
+
+    /*menu*/
+
+    .container h1{
+      margin: 50px auto 0 auto;
+      font-size: 50px;
+    }
+
+    .pc ul{
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 25px auto;
+      padding: 0;
+    }
+
+    .pc ul a{
+      padding: 15px;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: 'Dosis', sans-serif;
+    }
+
+    .white ul a{
+      color: white;
+      font-weight: bold;
+    }
+
+    .white ul a:hover{
+      border-bottom: white 2px solid;
+      color: white;
+    }
+
+    .pc ul li:nth-child(5) a{
+      background: #02a9a2;
+      color: white;
+      padding: 10px;
+    }
+
+    .pc ul li:nth-child(5) a:hover{
+      background: #007977;
+      border-bottom: none;
+    }
+
+    .pc ul li a span{
+      border-bottom: white 2px solid;
+      padding: 16px;
+    }
+
+    .pc ul li a span:hover{
+      border-bottom: none;
+    }
+
+    .pc ul a{
+      -webkit-transition: all .3s ease; /* Safari and Chrome */
+      -moz-transition: all .3s ease; /* Firefox */
+      -ms-transition: all .3s ease; /* IE 9 */
+      -o-transition: all .3s ease; /* Opera */
+      transition: all .4s ease;
+    }
+
+    .pc ul a:hover{
+      letter-spacing: 8px;
+      transform:scale(.5);
+     -ms-transform:scale(.5); /* IE 9 */
+     -moz-transform:scale(.5); /* Firefox */
+     -webkit-transform:scale(.5); /* Safari and Chrome */
+     -o-transform:scale(.5);
+     border-bottom: #007977 2px solid;
+    }
+
+    .pc ul li .b{
+      border-bottom: #007977 2px solid;
+    }
+
+    /*menu end*/
+
+    /*page accueil*/
+
+    .article1{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .article1 article{
+      width: 45%;
+    }
+
+    .article1 figure{
+      width: 50%;
+    }
+
+    .article2{
+      justify-content: flex-start;
+    }
+
+    .article2 h2{
+      text-align: left;
+    }
+
+    .button{
+      text-align: right;
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    /*end page accueil*/
+
+    /*page bio*/
+
+    .bioaxel{
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: auto;
+      justify-content: space-between;
+      margin: 50px auto;
+    }
+
+    .bioaxel figure{
+      width: 50%;
+    }
+
+    .bioaxel article{
+      width: 45%;
+    }
+
+    .fig{
+      display: none;
+    }
+
+    .bioaxel2{
+      border-top: #007977 2px solid;
+      border-bottom: #007977 2px solid;
+      margin-bottom: 30px;
+    }
+
+    /*end page bio*/
+
+    /*page concept*/
+
+    .last figure{
+      display: flex;
+      width: 40%;
+    }
+
+    .last{
+      display: flex;
+      margin: auto;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .last article{
+      width: 50%;
+    }
+
+    .lastlast figure{
+      display: flex;
+      width: 50%;
+    }
+
+    .lastlast p{
+      width: 40%;
+    }
+
+    .ce{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+
+    /*page concept end*/
+
+    /*Page Budget*/
+    .containerbudget{
+      text-align: center;
+    }
+
+    .budgetmobile{
+      display: none;
+    }
+
+    .budgetpc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .color{
+      display: flex;
+    }
+
+    .budgetpc ul li p{
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    .budgetpc ul li{
+      display: flex;
+      align-items: center;
+    }
+
+    .blue{
+      background: #4988BE;
+    }
+
+    .red{
+      background: #C7817F;
+    }
+
+    .vert{
+      background: #96C179;
+    }
+
+    .violet{
+      background: #7373AB;
+    }
+
+    .bleu{
+      background: #6BC1DA;
+    }
+
+    .orange{
+      background: #DFA365;
+    }
+
+    .violet-claire{
+      background: #8EB2D6;
+    }
+
+    .rouge{
+      background: #D2A29E;
+    }
+
+    .vert-claire{
+      background: #B3D3A1;
+    }
+    /*end Page budget*/
+
+    /*Pages contact */
+
+    .contact{
+      width: 75%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .map-mobile,.map-pc{
+      display: none;
+    }
+
+    .map-tab{
+      display: block;
+    }
+
+    .contact p {
+      border-bottom: #918d8a solid 1px;
+      border-spacing: 10px;
+    }
+
+    /*end pages Contact */
+
+  }
+
+  @media (min-width: 1024px){
+
+  /*page accueiel*/
+
+  .bk{
+      background: url("../img/photo.jpg") fixed center no-repeat;
+      background-size: cover;
+  }
+
+  .pc ul{
+    width: 60%;
+  }
+
+  .container h1{
+    font-size: 70px;
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  .container h1 span{
+    color: #02a9a2;
+  }
+
+  .article1 article h2{
+    font-size: 22px;
+  }
+
+  .article1 figure{
+    width: 30%;
+  }
+
+  .article1 article{
+    margin-left: 30px;
+  }
+
+  .article1 p{
+    margin: 0;
+    display: flex;
+    font-weight: bold;
+  }
+
+  .article1{
+    width: 80%;
+  }
+
+  /*end page accueil*/
+
+  /*Page Budget */
+
+  .budgetpc{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .budgetpc figure{
+    width: 35%;
+    }
+
+  .color{
+    width: 65%;
+  }
+
+    /*end page budget */
+
+    /*Pages Conatact */
+
+     .contact{
+       width: 60%;
+       margin: auto;
+      }
+
+     .contact h1,.contact h2{
+       text-align: center;
+     }
+
+     .map{
+       width: 90%;
+       margin: auto;
+       text-align: center;
+     }
+
+     .map-pc{
+       width: 100%;
+     }
+
+     iframe{
+       margin-right: 3em;
+     }
+
+    /*Ende pages Contact */
+
+    /*page concept*/
+
+    .containerconcept{
+      width: 80%;
+      margin: auto;
+    }
+
+    .cent{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .concept2, .concept3{
+      width: 49%;
+    }
+
+    /*.concept1, .concept2{
+      text-align: center;
+    }*/
+
+    /*page concept end*/
+
+  }
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
